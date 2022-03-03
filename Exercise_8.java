@@ -10,10 +10,10 @@ import java.util.Stack;
 
 public class Exercise_8 {
     /**
-     * TODO: dokumentācija
+     * Takes a mathematical expression in the form of a string and solves it
      * 
      * @param expression
-     * @return
+     * @return double value equal to the expression's calculated value
      */
     public static double executeStringEquation(String expression) {
         char[] tokens = expression.toCharArray();
@@ -79,11 +79,12 @@ public class Exercise_8 {
     }
 
     /**
-     * TODO: dokumentācija
+     * Helper method that decides if operations already existing in ops stack should be executed
+     * before adding another operation
      * 
      * @param op1
      * @param op2
-     * @return
+     * @return returns false if op1 has higher precidence than op2, otherwise returns true
      */
     public static boolean hasPrecedence(char op1, char op2) {
         if ((op1 == '*' || op1 == '/') && (op2 == '+' || op2 == '-'))
@@ -93,12 +94,12 @@ public class Exercise_8 {
     }
 
     /**
-     * TODO: dokumentācija
+     * Takes an operation and 2 operands and executes the operation
      * 
      * @param op
      * @param b
      * @param a
-     * @return
+     * @return double equal to the executed operation
      */
     public static double applyOp(char op, double b, double a) {
         switch (op) {
