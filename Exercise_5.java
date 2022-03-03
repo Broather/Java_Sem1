@@ -32,8 +32,7 @@ public class Exercise_5 {
     }
 
     /**
-     * Array where elements at indexes 0 - 5 returns the number of occurences for
-     * each case (1 - 6)
+     * Array where elements at indexes 0 - 5 returns the number of occurences for each case (1 - 6)
      * 
      * @param N
      * @return a histogram for rolling a 6-sided die N times
@@ -60,8 +59,7 @@ public class Exercise_5 {
     }
 
     /**
-     * @return the amount of tries it took to get 2 dies to roll 6 (for a total of
-     *         12)
+     * @return the amount of tries it took to get 2 dies to roll 6 (for a total of 12)
      */
     public static int roll2Dices() {
         int tries = 0;
