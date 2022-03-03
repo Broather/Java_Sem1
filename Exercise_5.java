@@ -1,0 +1,73 @@
+package SEMINARS_1;
+
+public class Exercise_5 {
+    public static void main(String[] args) {
+        System.out.printf("Rolled double 6 in %d tries%n", roll2Dices());
+    }
+
+    // @formatter:off
+    /**
+     * The method returns an array of three elements where:
+     * [<number of heads>, <number of tails>, <ratio: nheads/ntails>]
+     * 
+     * @param N
+     * @return an array with 3 elements of type double: [<heads_count>, <tails_count>, <ratio: heads/tails>]
+     */
+    // @formatter:on
+    public static double[] coinFlip(int N) {
+        if (N <= 0) {
+            return new double[0];
+        }
+        double[] result = new double[3];
+        for (int i = 0; i < N; i++) {
+
+            if (Math.random() > 0.5) {
+                result[0]++;
+            } else {
+                result[1]++;
+            }
+        }
+        result[2] = result[0] / result[1];
+
+        return result;
+    }
+
+    /**
+     * Array where elements at indexes 0 - 5 returns the number of occurences for each case (1 - 6)
+     * 
+     * @param N
+     * @return a histogram for rolling a 6-sided die N times
+     */
+    public static int[] rollDice(int N) {
+        if (N <= 0) {
+            return new int[0];
+        }
+        int[] result = new int[6];
+        for (int i = 0; i < N; i++) {
+            result[my_random_int(1, 6) - 1]++;
+        }
+        return result;
+    }
+
+    /**
+     * @param lower
+     * @param upper
+     * @return a random integer in the range [lower; upper]
+     */
+    private static int my_random_int(int lower, int upper) {
+        int random = (int) Math.round((Math.random() * (upper - lower)) + lower);
+        return random;
+    }
+
+    /**
+     * @return the amount of tries it took to get 2 dies to roll 6 (for a total of 12)
+     */
+    public static int roll2Dices() {
+        int tries = 0;
+        while (my_random_int(1, 6) + my_random_int(1, 6) != 12) {
+            tries++;
+        }
+        return tries;
+    }
+
+}
