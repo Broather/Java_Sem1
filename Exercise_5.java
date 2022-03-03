@@ -32,10 +32,11 @@ public class Exercise_5 {
     }
 
     /**
-     * Array where elements at indexes 0 - 5 returns the number of occurences for each case (1 - 6)
+     * Kauliņu mešanas simulātors
      * 
      * @param N
-     * @return a histogram for rolling a 6-sided die N times
+     * @return histogramma kā masīvs kas uzskaita cik reizes katra metamā kauliņa vērtība tika
+     *         uzmesta
      */
     public static int[] rollDice(int N) {
         if (N <= 0) {
