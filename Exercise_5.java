@@ -7,11 +7,10 @@ public class Exercise_5 {
 
     // @formatter:off
     /**
-     * The method returns an array of three elements where:
-     * [<number of heads>, <number of tails>, <ratio: nheads/ntails>]
+     * Monētas mešanas simulācija:
      * 
      * @param N
-     * @return an array with 3 elements of type double: [<heads_count>, <tails_count>, <ratio: heads/tails>]
+     * @return statistikas masīvs formātā [<number of heads>, <number of tails>, <ratio: nheads/ntails>]
      */
     // @formatter:on
     public static double[] coinFlip(int N) {
@@ -33,7 +32,8 @@ public class Exercise_5 {
     }
 
     /**
-     * Array where elements at indexes 0 - 5 returns the number of occurences for each case (1 - 6)
+     * Array where elements at indexes 0 - 5 returns the number of occurences for
+     * each case (1 - 6)
      * 
      * @param N
      * @return a histogram for rolling a 6-sided die N times
@@ -60,7 +60,8 @@ public class Exercise_5 {
     }
 
     /**
-     * @return the amount of tries it took to get 2 dies to roll 6 (for a total of 12)
+     * @return the amount of tries it took to get 2 dies to roll 6 (for a total of
+     *         12)
      */
     public static int roll2Dices() {
         int tries = 0;
