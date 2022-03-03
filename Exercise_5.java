@@ -52,7 +52,7 @@ public class Exercise_5 {
     /**
      * @param lower
      * @param upper
-     * @return a random integer in the range [lower; upper]
+     * @return gadījuma ints diapazonā [lower; upper]
      */
     private static int my_random_int(int lower, int upper) {
         int random = (int) Math.round((Math.random() * (upper - lower)) + lower);
