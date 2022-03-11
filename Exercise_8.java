@@ -4,7 +4,7 @@
 /*
  * A Java program to evaluate a given expression where tokens are separated by space.
  */
-package SEMINARS_1;
+package normalJava.SEMINARS_1;
 
 import java.util.Stack;
 

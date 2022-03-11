@@ -1,4 +1,4 @@
-package SEMINARS_1;
+package normalJava.SEMINARS_1;
 
 public class Exercise_2 {
     public static void main(String[] args) {
